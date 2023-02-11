@@ -505,8 +505,54 @@ img {
   transform: rotate(-180deg);
 }
 /*==================== QUALIFICATION ====================*/
+.qualification__tabs{
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: var(--mb-2);
+}
 
+.qualification__button{
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+  cursor: pointer;
+}
 
+.qualification__button:hover{
+  color: var(--first-color);
+}
+
+.qualification__icon{
+  font-size: 1.8rem;
+  margin-right: var(--mb-0-25);
+}
+
+.qualifications__data{
+  display:grid;
+  grid-template-columns: 1fr max-content 1fr;
+}
+
+.qualifications__title{
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+}
+
+.qualifications__subtitle{
+  display: inline-block;
+  font-size: var(--small-font-size);
+  margin-bottom: var(--mb-1);
+}
+
+.qualification__calendar{
+  font-size: var(--smaller-font-size);
+  color: var(--text-color-light)
+}
+
+.qualifications__rounder{
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+}
 /*==================== SERVICES ====================*/
 
 
