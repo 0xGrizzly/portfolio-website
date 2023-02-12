@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
         
         <!--==================== SWIPER CSS ====================-->
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
         
         <!--==================== CSS ====================-->
         <link rel="stylesheet" href="assets/css/styles.css">
@@ -23,7 +23,7 @@
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list grid">
                         <li class="nav__item">
-                           <a href="#home" class="nav__link">
+                           <a href="#home" class="nav__link active-link">
                             <i class="uil uil-estate nav__icon"></i> Home
                            </a> 
                         </li>
@@ -56,11 +56,15 @@
                     <i class="uil uil-times nav__close" id="nav-close"></i>
                 </div>
 
-                <devi class="nav__btns">
+                <dev class="nav__btns">
+                    <!--Dark Mode-->
+                    <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+
                     <div class="nav__toggle" id="nav-toggle">
                         <i class="uil uil-apps"></i>
                     </div>
-                </devi>
+                </dev>
             </nav>
             
         </header>
@@ -104,11 +108,11 @@
                         </div>
                         <div class="home__data">
                             <h1 class="home__title">Hi, I'm Garrett</h1>
-                        <h3 class="home_subtitle">Software Engineer</h3>
-                        <p class="home__description">Experience in Full-Stack Development and Cyber Threat Intelligence</p>
-                        <a href="#contact" class="button button--flex">
+                            <h3 class="home_subtitle">Software Engineer</h3>
+                            <p class="home__description">Experience in Full-Stack Development and Cyber Threat Intelligence</p>
+                            <a href="#contact" class="button button--flex">
                            Contact Me<i class="uil uil-message button__icon"></i>
-                        </a>
+                            </a>
                         </div>
                     </div>
 
@@ -322,8 +326,8 @@
                                         <span class="skills__percentage skills__scripting"></span>
                                     </div>
                                 </div>
-                                </div>
                             </div>
+                        </div>
                         </div>
                     </div>
                 </div>
@@ -448,7 +452,62 @@
 
             <!--==================== PORTFOLIO ====================-->
             <section class="portfolio section" id="portfolio">
-                
+                <h2 class="section__title">Portfolio</h2>
+                <span class="section__subtitle">Most recent work</span>
+
+                <div class="portfolio__container container swiper-container">
+                    <div class="swiper-wrapper">
+                        <!--==================== PORTFOLIO 1 ====================-->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="assets/img/portfolio1.jpg" alt="" class="portfolio__img">
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Apple E-Commerce Mock-up</h3>
+                                <p class="portfolio__description">A apple clone website built using HTML,CSS, 
+                                    and JavaScript.</p>
+                                    <a href="#" class="button button--flex button--small portfolio__button">
+                                        Demo
+                                        <i class="uil uil-arrow-right button__icon"></i>
+                                    </a>
+                            </div>
+                        </div>
+    
+                            <!--==================== PORTFOLIO 2 ====================-->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="assets/img/portfolio2.jpg" alt="" class="portfolio__img">
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Brand Design</h3>
+                                <p class="portfolio__description">A apple clone website built using HTML,CSS, 
+                                    and JavaScript.</p>
+                                    <a href="#" class="button button--flex button--small portfolio__button">
+                                        Demo
+                                        <i class="uil uil-arrow-right button__icon"></i>
+                                    </a>
+                            </div>
+                        </div>
+    
+                            <!--==================== PORTFOLIO 3 ====================-->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="assets/img/portfolio3.jpg" alt="" class="portfolio__img">
+                            <div class="portfolio__data">
+                                    <h3 class="portfolio__title">Online Store</h3>
+                                    <p class="portfolio__description">A apple clone website built using HTML,CSS, 
+                                    and JavaScript.</p>
+                                    <a href="#" class="button button--flex button--small portfolio__button">
+                                        Demo
+                                        <i class="uil uil-arrow-right button__icon"></i>
+                                    </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next">
+                        <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                </div>
             </section>
 
             <!--==================== PROJECT IN MIND ====================-->
@@ -463,20 +522,103 @@
 
             <!--==================== CONTACT ME ====================-->
             <section class="contact section" id="contact">
+                <h2 class="section__title">Contact Me</h2>
+                <span class="section__subtitle">Get in touch</span>
+                <div class="contact__container container grid">
+                    <div>
+                        <div class="contact__information">
+                            <i class="uil uil-envelope-upload contact__icon"></i>
+                            <div>
+                                <h3 class="contact__title">Email</h3>
+                                <span class="contact__subtitle">garrettcmcguire@gmail.com</span>
+                            </div>
+                        </div>
 
+                        <div class="contact__information">
+                            <i class="uil uil-map contact__icon"></i>
+                            <div>
+                                <h3 class="contact__title">Location</h3>
+                                <span class="contact__subtitle">Atlanta, Ga</span>
+                            </div>
+                        </div>
+                    </div>
+                    <form action="" class="contact__form grid">
+                        <div class="contact__inputs grid">
+                            <div class="contact__content">
+                                <label for="" class="contact__label">Name</label>
+                                <input type="text" class="contact__input">
+                            </div>
+                            <div class="contact__content">
+                                <label for="" class="contact__label">Email</label>
+                                <input type="email" class="contact__input">
+                            </div>
+                            <div class="contact__content">
+                                <label for="" class="contact__label">Projects</label>
+                                <input type="text" class="contact__input">
+                            </div>
+                            <div class="contact__content">
+                                <label for="" class="contact__label">Message</label>
+                                <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+                            </div>
+
+                            <div>
+                                <a href="" class="button button--flex">
+                                    Send Message
+                                    <i class="uil uil-message button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </section>
         </main>
 
         <!--==================== FOOTER ====================-->
         <footer class="footer">
+            <div class="footer__bg">
+                <div class="footer__container container grid">
+                    <div>
+                        <h1 class="footer__title">Garrett</h1>
+                        <span class="footer__subtitle">Frontend Developer</span>
+                    </div>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#home" class="footer__link">Home</a>
+                        </li>
+                        <li>
+                            <a href="#portfolio" class="footer__link">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="footer__link">Contact</a>
+                        </li>
+                    </ul>
+
+                    <div class="footer__socials">
+                        <a href="https://www.instagram.com/garrett_mcguire/" target="_blank" class="footer__social">
+                            <i class="uil uil-instagram"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/garrett-mcguire/" target="_blank" class="footer__social">
+                            <i class="uil uil-linkedin-alt"></i>
+                        </a>
+                        <a href="" class="footer__social">
+                            <i class="uil uil-discord"></i>
+                            <p>0xGrizzly#7667</p>
+                        </a>
+                    </div>
+        
+                </div>
+            </div>
          
         </footer>
         
         <!--==================== SCROLL TOP ====================-->
-        
+        <a href="" class="scrollup" id="scrollup">
+            <i class="uil uil-arrow-up scrollup__icon"></i>
+        </a>
 
         <!--==================== SWIPER JS ====================-->
-        <script src=""></script>
+        <script src="assets/js/swiper-bundle.min.js"></script>
 
         <!--==================== MAIN JS ====================-->
         <script src="assets/js/main.js"></script>
