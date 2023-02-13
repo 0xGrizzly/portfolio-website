@@ -6,4 +6,4 @@
 - Developed first with the Mobile First methodology, then for desktop.
 - Compatible with all mobile devices and with a beautiful and pleasant user interface.
 
-![Alt text](responsive-portfolio-website-Alexa\assets\img\FrontPage.jpg)
+![Alt text](responsive-portfolio-website-Alexa\assets\img\FrontPage.jpg?raw=true "Title")
