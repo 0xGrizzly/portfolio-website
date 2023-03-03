@@ -560,18 +560,18 @@
                             </div>
                         </div>
                     </div>
-                    <form action="" class="contact__form grid">
+                    <form onsubmit="sendEmail(); reset(); return false;" action="" class="contact__form grid">
                         <div class="contact__inputs grid">
                             <div class="contact__content">
                                 <label for="" class="contact__label">Name</label>
                                 <input type="text" class="contact__input">
                             </div>
                             <div class="contact__content">
-                                <label for="" class="contact__label">Email</label>
+                                <label for="" class="contact__label email" >Email</label>
                                 <input type="email" class="contact__input">
                             </div>
                             <div class="contact__content">
-                                <label for="" class="contact__label">Projects</label>
+                                <label for="" class="contact__label">Project Collaboration</label>
                                 <input type="text" class="contact__input">
                             </div>
                             <div class="contact__content">
@@ -640,5 +640,6 @@
 
         <!--==================== MAIN JS ====================-->
         <script src="assets/js/main.js"></script>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
     </body>
 </html>

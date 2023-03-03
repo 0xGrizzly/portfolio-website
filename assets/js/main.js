@@ -137,3 +137,20 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
+
+/*==================== Contact Form Functionality ====================*/
+
+function sendEmail(){
+    Email.send({
+        Host : "smtp.gmail.com",
+        Username : "garrettcmcguire@gmail.com",
+        Password : "Password",
+        To : 'garrettcmcguire@gmail.com',
+        From : document.getElementById("email").value,
+        Subject : "New Contact Form Enquiry",
+        Body : "And this is the body"
+    }).then(
+        message => alert(message)
+    );
+}
