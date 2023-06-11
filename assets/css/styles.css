@@ -375,7 +375,7 @@ img {
 
 /*==================== ABOUT ====================*/
 .about__img{
-  width: 200px;
+  width: 300px;
   border-radius: .5rem;
   justify-self: center;
   align-self: center;
@@ -490,7 +490,7 @@ img {
 }
 
 .skills__js{
-  width: 60%;
+  width: 70%;
 }
 .skills__react{
   width: 70%;
@@ -505,14 +505,14 @@ img {
   width: 70%;
 }
 .skills__python{
-  width: 85%;
+  width: 70%;
 }
 
 .skills__cti{
-  width: 70%;
+  width: 60%;
 }
 .skills__ma{
-  width: 60%;
+  width: 85%;
 }
 .skills__scripting{
   width: 70%;
