@@ -49,7 +49,6 @@
     --mb-2: 2rem;
     --mb-2-5: 2.5rem;
     --mb-3: 3rem;
-
     /*========== z index ==========*/
     --z-tooltip: 10;
     --z-fixed: 100;
@@ -556,6 +555,16 @@ img {
 .qualifications__data{
   display:grid;
   grid-template-columns: 1fr max-content 1fr;
+  margin-bottom: 20px;
+}
+
+.qualifications__data > div:last-child {
+  padding-left: 20px; /* Adjust the value as needed */
+}
+
+.qualifications__data:first-child {
+  position: relative;
+  left: -10px; /* or however much is needed to align it */
 }
 
 .qualifications__title{
@@ -578,7 +587,16 @@ img {
   display: inline-block;
   width: 13px;
   height: 13px;
+  background-color: var(--first-color);
   border-radius: 50%;
+}
+
+.qualifications__line {
+  display:block;
+  width: 1px;
+  height: 100%;
+  background-color: var(--first-color);
+  transform: translate(6px, -7px);
 }
 /*==================== SERVICES ====================*/
 
