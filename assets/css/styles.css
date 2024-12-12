@@ -480,40 +480,40 @@ img {
   background-color: var(--first-color);
 }
 
-.skills__html{
-  width: 90%;
-}
-
-.skills__css{
-  width: 80%;
-}
-
-.skills__js{
+.skills__exploit{
   width: 70%;
 }
-.skills__react{
-  width: 70%;
-}
-.skills__php{
+
+.skills__linux{
   width: 80%;
 }
-.skills__node{
-  width: 80%;
+
+.skills__malware{
+  width: 85%;
 }
-.skills__firebase{
+.skills__network{
   width: 70%;
 }
 .skills__python{
+  width: 80%;
+}
+.skills__assembly{
+  width: 60%;
+}
+.skills__cpp{
   width: 70%;
+}
+.skills__reverse{
+  width: 80%;
 }
 
 .skills__cti{
-  width: 60%;
+  width: 80%;
 }
-.skills__ma{
-  width: 85%;
+.skills__incident{
+  width: 70%;
 }
-.skills__scripting{
+.skills__loganalysis{
   width: 70%;
 }
 
